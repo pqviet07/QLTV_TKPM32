@@ -13,7 +13,8 @@ namespace Library
         Canceled,
         Blacklisted
     }
-    enum BookType{
+    enum BookType
+    {
         Textbook,
         Autobiography,
         Thriller,
@@ -83,7 +84,7 @@ namespace Library
     }
     class LibraryCard
     {
-        public string CardNumber { get; set; }
+        public string LibCardNumber { get; set; }
         public DateTime IssuedAt { get; set; }
         public DateTime ExpiredAt { get; set; }
         public bool Active { get; set; }
@@ -155,7 +156,7 @@ namespace Library
 
     class BookItem : Book
     {
-        public string Barcode { get; set; }
+        public string BarCode { get; set; }
         public bool isReferenceOnly { get; set; } 
         public bool isBorrowed { get; set; }
         public BookFormat Format { get; set; }
@@ -166,6 +167,39 @@ namespace Library
         {
             return true;
         }
+    }
+
+
+    class Fine
+    {
+         public decimal AmountPaid { get; set; }
+    }
+    class BookLending
+    {
+        public string ID_Lending { get; set; }
+        public string LibCardNumber {get; set;}
+        public DateTime CreationDate { get; set; }
+        public DateTime ReturnDate { get; set; }
+
+    }
+
+    class BookLendingDetails
+    {
+        
+    }
+
+    class BookReservation
+    {
+        public string ID_Reservation { get; set; }
+        public string LibCardNumber {get; set;}
+        public DateTime ReturnDate { get; set; }
+    }
+
+    class BookReservationDetails
+    {
+        public string ID_Reservation { get; set; }
+        public string BarCode { get; set; }
+        public DateTime ReturnDate { get; set; }
     }
 }
 
