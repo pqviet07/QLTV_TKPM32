@@ -82,7 +82,7 @@ namespace Library
         public Dictionary<string, List<Book>> booksSearchedByAuthor { get; set; }
         public Dictionary<string, List<Book>> booksSearchedByBookName { get; set; }
         public Dictionary<string, List<Book>> booksSearchedByISBN { get; set; }
-        public Dictionary<string, List<Book>> booksSearchedByDateAddToLibrary { get; set; }
+        public Dictionary<DateTime, List<Book>> booksSearchedByDateAddToLibrary { get; set; }
         public Dictionary<string, List<Book>> booksSearchedByBookFormat { get; set; }
         public Dictionary<string, List<Book>> booksSearchedByReferenceOnlyBook { get; set; }
 
@@ -177,13 +177,11 @@ namespace Library
         {
             listNotifications.Add(notification);
         }
-
-
     }
     class Admin : Account
     {
-        bool addEmployee(Employee employee) { return true; }
-        bool removeEmployee(string username) { return true; }
+        public bool addEmployee(Employee employee) { return true; }
+        public bool removeEmployee(string username) { return true; }
     }
     abstract class Employee : Account
     {
@@ -192,16 +190,18 @@ namespace Library
 
     class Librarian : Employee
     {
-        bool addMember(string username, MemberType memType) { return true; }
-        bool renewLibraryCard(string username, MemberType memType) { return true; }
-        bool blockMember(string libCardID) { return true; }
-        bool unblockMember(string libCardID) { return true; }
+        public bool createBookLending() { return true; }
+        public bool createBookReturning() { return true; }
+        public bool addMember(string username, MemberType memType) { return true; }
+        public bool renewLibraryCard(string username, MemberType memType) { return true; }
+        public bool blockMember(string libCardID) { return true; }
+        public bool unblockMember(string libCardID) { return true; }
     }
     class Stockkeeper : Employee
     {
-        bool addBookItem(BookItem book) { return true; }
-        bool updateBookItem(BookItem book) { return true; }
-        bool removeBookItem(string barcode) { return true; }
+        public bool addBookItem(BookItem book) { return true; }
+        public bool updateBookItem(BookItem book) { return true; }
+        public bool removeBookItem(string barcode) { return true; }
     }
 
     class Member : Account
@@ -276,6 +276,18 @@ namespace Library
             listAccounts.Add(account);
         }
         public void notifyAllAccount()
+        {
+
+        }
+        public void notifyFine()
+        {
+
+        }
+        public void notifyDueDateLibCard()
+        {
+
+        }
+        public void notifyDueDateReturnBook()
         {
 
         }
