@@ -46,11 +46,24 @@ namespace Library
         Loaned,
         Lost
     }
+    enum ReturningStatus
+    {
+        Normal,
+        Lost,
+        Torned
+    }
     enum MemberType
     {
         OneYear,
         TwoYear,
         Forever
+    }
+    class Fine
+    {
+       public decimal fineWhenLateReturningBook { get; set; }
+       public decimal numsOfTimesWillMultiplyWithBookPricing_WhenBookLost { get; set; }
+       public decimal numsOfTimesWillMultiplyWithBookPricing_WhenBookTorned { get; set; }
+       public decimal AmountPaidForRemakeLibCard { get; set; }
     }
     interface ISearch
     {
@@ -62,6 +75,57 @@ namespace Library
         List<Book> searchByReferenceOnlyBook(bool isRefOnly);
         List<Book> searchByBookFormat(BookFormat bookFormat);
 
+    }
+    class Catalog : ISearch
+    {
+        public Dictionary<string, List<Book>> booksSearchedByBookType { get; set; }
+        public Dictionary<string, List<Book>> booksSearchedByAuthor { get; set; }
+        public Dictionary<string, List<Book>> booksSearchedByBookName { get; set; }
+        public Dictionary<string, List<Book>> booksSearchedByISBN { get; set; }
+        public Dictionary<string, List<Book>> booksSearchedByDateAddToLibrary { get; set; }
+        public Dictionary<string, List<Book>> booksSearchedByBookFormat { get; set; }
+        public Dictionary<string, List<Book>> booksSearchedByReferenceOnlyBook { get; set; }
+
+        public List<Book> searchByAuthor(string authorName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Book> searchByBookFormat(BookFormat bookFormat)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Book> searchByBookName(string bookName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Book> searchByBookType(BookType bookType)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Book> searchByDateAddToLibrary(DateTime datetime)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Book> searchByISBN(string ISBN)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Book> searchByReferenceOnlyBook(bool isRefOnly)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    class Author
+    {
+        public string AuthorID { get; set; }
+        public string Name { get; set; }
     }
     class Address
     {
@@ -76,6 +140,7 @@ namespace Library
     class PersonalInfo
     {
         public string Name { get; set; }
+        public string Sex { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string IdentificationNumber { get; set; }
         public Address Addr { get; set; }
@@ -98,11 +163,22 @@ namespace Library
         public string Username { get; set; }
         public string Password { get; private set; }
         public AccountStatus Status { get; set; }
-        public string UserType{get; set;}
+        public string UserType { get; set; }
         public PersonalInfo personalInfo { get; set; }
         public LibraryCard libraryCard { get; set; }
+        public List<Notification> listNotifications { get; set; }
         public bool changePassword() { return true; }
-       
+        public Account(LibrarySystem libSystem)
+        {
+            libSystem.attach(this);
+        }
+        public Account() { }
+        public void update(Notification notification)
+        {
+            listNotifications.Add(notification);
+        }
+
+
     }
     class Admin : Account
     {
@@ -114,15 +190,14 @@ namespace Library
 
     }
 
-    class Librarian : Account
+    class Librarian : Employee
     {
         bool addMember(string username, MemberType memType) { return true; }
-        bool removeMember(string username) { return true; }
         bool renewLibraryCard(string username, MemberType memType) { return true; }
         bool blockMember(string libCardID) { return true; }
         bool unblockMember(string libCardID) { return true; }
     }
-    class Stockkeeper : Account
+    class Stockkeeper : Employee
     {
         bool addBookItem(BookItem book) { return true; }
         bool updateBookItem(BookItem book) { return true; }
@@ -137,16 +212,15 @@ namespace Library
 
     class Rack
     {
-        // A_MATH_12 --> Khu A kệ 12 thể loại toán
-        // B_PHYS_34
         public int number { get; set; }
-        public string title { get; set; }
         public char block { get; set; }
     }
+
     abstract class Book
     {
         string ISBN { get; set; }
         string bookName { get; set; }
+        public List<Author> Authors { get; set; }
         BookType bookType { get; set; }
         string Publisher { get; set; }
         string Language { get; set; }
@@ -156,8 +230,8 @@ namespace Library
 
     class BookItem : Book
     {
-        public string BarCode { get; set; }
-        public bool isReferenceOnly { get; set; } 
+        public string Barcode { get; set; }
+        public bool isReferenceOnly { get; set; }
         public bool isBorrowed { get; set; }
         public BookFormat Format { get; set; }
         public BookStatus Status { get; set; }
@@ -169,37 +243,48 @@ namespace Library
         }
     }
 
-
-    class Fine
-    {
-         public decimal AmountPaid { get; set; }
-    }
     class BookLending
     {
         public string ID_Lending { get; set; }
-        public string LibCardNumber {get; set;}
+        public string LibCardNumber { get; set; }
         public DateTime CreationDate { get; set; }
-        public DateTime ReturnDate { get; set; }
-
     }
 
     class BookLendingDetails
     {
-        
+        public string ID_Lending { get; set; }
+        public string Barcode { get; set; }
+        public DateTime DueDate { get; set; }
     }
 
-    class BookReservation
+    class BookReturning
     {
-        public string ID_Reservation { get; set; }
-        public string LibCardNumber {get; set;}
+        public string ID_Lending { get; set; }
+        public string Barcode { get; set; }
         public DateTime ReturnDate { get; set; }
+        public int Duration { get; set; }
+        public decimal Fine { get; set; }
+        public ReturningStatus Status { get; set; }
+        public string Note { get; set; }
     }
 
-    class BookReservationDetails
+    class LibrarySystem
     {
-        public string ID_Reservation { get; set; }
-        public string BarCode { get; set; }
-        public DateTime ReturnDate { get; set; }
+        public List<Account> listAccounts { get; set; }
+        public void attach(Account account)
+        {
+            listAccounts.Add(account);
+        }
+        public void notifyAllAccount()
+        {
+
+        }
+    }
+
+    class Notification
+    {
+        public string notificationID { get; set; }
+        public string content { get; set; }
     }
 }
 
