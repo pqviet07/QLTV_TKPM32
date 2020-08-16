@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 using DevExpress.Xpf.Core;
 using DevExpress.Xpf.Ribbon;
 
-namespace LibraryManagement
+namespace View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
