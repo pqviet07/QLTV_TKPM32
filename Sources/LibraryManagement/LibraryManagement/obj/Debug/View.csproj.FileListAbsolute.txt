@@ -118,6 +118,3 @@ C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\LibraryMana
 C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\obj\Debug\View.csproj.CopyComplete
-D:\Vinh175\Hoc\Nam3\ThietKePhanMem\FinalProject\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe.config
-D:\Vinh175\Hoc\Nam3\ThietKePhanMem\FinalProject\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
-D:\Vinh175\Hoc\Nam3\ThietKePhanMem\FinalProject\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
