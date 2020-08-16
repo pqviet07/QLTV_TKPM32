@@ -14,5 +14,7 @@ namespace Model
         public string Barcode { get; set; }
         [Required]
         public DateTime DueDate { get; set; }
+        public int BookLendingId { get; set; }
+        public BookLending BookLending { get; set; }
     }
 }

@@ -9,10 +9,15 @@ namespace Model
 {
     public class Rack
     {
+        public Rack()
+        {
+            BookItems = new HashSet<BookItem>();
+        }
         public int Id { get; set; }
         [Required]
-        public int number { get; set; }
+        public int Number { get; set; }
         [Required]
-        public char block { get; set; }
+        public char Block { get; set; }
+        public ICollection<BookItem> BookItems { get; set; }
     }
 }
