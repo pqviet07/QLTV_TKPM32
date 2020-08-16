@@ -4,3 +4,9 @@ C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\D
 C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.dll
 C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\Model\bin\Debug\Model.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\Model\bin\Debug\Model.pdb

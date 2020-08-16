@@ -13,11 +13,11 @@ namespace Model
         public LibraryCard LibraryCard { get; set; }
         public ICollection<Notification> Notifications { get; set; }
         public bool ChangePassword() { return true; }
-        public Account(LibrarySystem libSystem)
+        public Account()
         {
-            libSystem.attach(this);
+            LibrarySystem.attach(this);
+            this.Notifications = new HashSet<Notification>();
         }
-        public Account() { this.Notifications = new HashSet<Notification>(); }
         public void Update(Notification notification)
         {
             Notifications.Add(notification);

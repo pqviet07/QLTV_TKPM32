@@ -12,3 +12,17 @@ C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\o
 C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.csproj.CopyComplete
 C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.dll
 C:\Users\QUOCVIET\Desktop\tkpm\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.csprojAssemblyReference.cache
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\ViewModel.dll.config
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\ViewModel.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\ViewModel.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\EntityFramework.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\Model.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\Model.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\EntityFramework.xml
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.csproj.CopyComplete

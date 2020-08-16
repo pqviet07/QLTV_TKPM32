@@ -1,31 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Model
 {
-    public class LibrarySystem
+    public sealed class LibrarySystem
     {
-        public List<Account> Accounts { get; set; }
-        public void attach(Account account)
+        private LibrarySystem() { }
+        private static readonly Lazy<LibrarySystem> lazy = new Lazy<LibrarySystem>(() => new LibrarySystem());
+        public static LibrarySystem Instance { get { return lazy.Value; } }
+
+        //------------------------------------------------------------
+        public static List<Account> Accounts { get; set; }
+
+        public static void attach(Account account)
         {
             Accounts.Add(account);
         }
-        public void notifyAllAccount()
+        public static void notifyAllAccount()
         {
 
         }
-        public void notifyFine()
+        public static void notifyFine()
         {
 
         }
-        public void notifyDueDateLibCard()
+        public static void notifyDueDateLibCard()
         {
 
         }
-        public void notifyDueDateReturnBook()
+        public static void notifyDueDateReturnBook()
         {
 
         }
