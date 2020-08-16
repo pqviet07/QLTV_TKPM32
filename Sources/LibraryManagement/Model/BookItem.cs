@@ -20,7 +20,7 @@ namespace Model
         public BookFormat Format { get; set; }
         [Required]
         public BookStatus Status { get; set; }
-        public decimal Price { get; set; }
+        public decimal? Price { get; set; }
         public DateTime? DateOfPurchase { get; set; }
         public bool Checkout()
         {
