@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    enum BookStatus
+    public enum BookStatus
     {
         Available,
         Reserved,

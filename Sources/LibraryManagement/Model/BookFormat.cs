@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    enum BookFormat
+    public enum BookFormat
     {
         Ebook,
         Hardcover,

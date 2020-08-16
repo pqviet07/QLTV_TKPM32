@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    enum AccountStatus
+    public enum AccountStatus
     {
         Active,
         Closed,

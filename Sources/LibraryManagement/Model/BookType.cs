@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    enum BookType
+    public enum BookType
     {
         Textbook,
         Autobiography,

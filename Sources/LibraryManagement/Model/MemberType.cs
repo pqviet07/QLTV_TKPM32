@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    enum MemberType
+    public enum MemberType
     {
         OneYear,
         TwoYear,
