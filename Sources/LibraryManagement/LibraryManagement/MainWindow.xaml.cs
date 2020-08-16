@@ -17,7 +17,7 @@ namespace View
             {
                 context.Database.CreateIfNotExists();
             }
-            InitializeComponent();
+            //InitializeComponent();
             
         }
 

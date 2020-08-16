@@ -1,0 +1,17 @@
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\obj\Debug\ConsoleApp.csprojAssemblyReference.cache
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\EntityFramework.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\Model.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\Model.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\EntityFramework.xml
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\obj\Debug\ConsoleApp.csproj.CopyComplete
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\obj\Debug\ConsoleApp.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\ViewModel.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\ViewModel.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ConsoleApp\bin\Debug\ViewModel.dll.config

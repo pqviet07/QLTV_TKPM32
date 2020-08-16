@@ -245,3 +245,5 @@ C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagemen
 C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\obj\Debug\View.csproj.CopyComplete
 C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
 C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\bin\Debug\Model.dll
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\LibraryManagement\bin\Debug\Model.pdb

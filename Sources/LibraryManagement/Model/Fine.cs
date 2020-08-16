@@ -8,6 +8,7 @@ namespace Model
 {
     public class Fine
     {
+        public int Id { get; set; }
         public decimal fineWhenLateReturningBook { get; set; }
         public decimal numsOfTimesWillMultiplyWithBookPricing_WhenBookLost { get; set; }
         public decimal numsOfTimesWillMultiplyWithBookPricing_WhenBookTorned { get; set; }

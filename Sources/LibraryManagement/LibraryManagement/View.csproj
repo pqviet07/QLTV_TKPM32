@@ -128,6 +128,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{c46d7db0-b8e8-441b-bafb-01c9e17307ea}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ViewModel\ViewModel.csproj">
       <Project>{892456a0-a337-44bb-9534-da5e0d6e8cae}</Project>
       <Name>ViewModel</Name>
