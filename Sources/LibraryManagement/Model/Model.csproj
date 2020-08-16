@@ -42,7 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountStatus.cs" />
+    <Compile Include="BookFormat.cs" />
+    <Compile Include="BookStatus.cs" />
+    <Compile Include="BookType.cs" />
+    <Compile Include="MemberType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturningStatus.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
