@@ -13,6 +13,11 @@ namespace ViewModel
         {
 
         }
-        public virtual DbSet<Account> Account { get; set; }
+        public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Notification> Notifications { get; set; }
+        public virtual DbSet<LibraryCard> LibraryCards { get; set; }
+        public virtual DbSet<PersonalInfo> PersonalInfos { get; set; }
+        public virtual DbSet<Address> Addresses { get; set; }
+
     }
 }

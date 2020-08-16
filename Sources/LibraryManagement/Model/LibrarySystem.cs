@@ -8,10 +8,10 @@ namespace Model
 {
     public class LibrarySystem
     {
-        public List<Account> listAccounts { get; set; }
+        public List<Account> Accounts { get; set; }
         public void attach(Account account)
         {
-            listAccounts.Add(account);
+            Accounts.Add(account);
         }
         public void notifyAllAccount()
         {

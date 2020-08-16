@@ -15,6 +15,7 @@ namespace Model
         public string Ward { get; set; }
         public string Country { get; set; }
         public string PostalCode { get; set; }
+        public PersonalInfo PersonalInfo { get; set; }
 
     }
 }

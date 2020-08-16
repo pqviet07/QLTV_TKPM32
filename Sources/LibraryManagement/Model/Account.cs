@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Model
 {
@@ -15,16 +11,16 @@ namespace Model
         public string UserType { get; set; }
         public PersonalInfo PersonalInfo { get; set; }
         public LibraryCard LibraryCard { get; set; }
-        public List<Notification> ListNotifications { get; set; }
+        public ICollection<Notification> Notifications { get; set; }
         public bool ChangePassword() { return true; }
         public Account(LibrarySystem libSystem)
         {
             libSystem.attach(this);
         }
-        public Account() { }
+        public Account() { this.Notifications = new HashSet<Notification>(); }
         public void Update(Notification notification)
         {
-            ListNotifications.Add(notification);
+            Notifications.Add(notification);
         }
     }
 }

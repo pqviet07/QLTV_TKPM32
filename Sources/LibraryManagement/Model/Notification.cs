@@ -10,5 +10,10 @@ namespace Model
     {
         public string Id { get; set; }
         public string Content { get; set; }
+        public Notification()
+        {
+            this.Accounts = new HashSet<Account>();
+        }
+        public ICollection<Account> Accounts { get; set; }
     }
 }
