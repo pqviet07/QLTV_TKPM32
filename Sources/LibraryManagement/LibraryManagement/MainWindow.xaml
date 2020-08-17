@@ -16,70 +16,36 @@
                 </DataTrigger>
             </Style.Triggers>
         </Style>
-        <Style TargetType="{x:Type dxe:PasswordBoxEdit}">
-            <Style.Triggers>
-                <DataTrigger Binding="{Binding IsKeyboardFocusWithin, RelativeSource={RelativeSource Self}}" Value="True">
-                    <Setter Property="Background" Value="Yellow"/>
-                </DataTrigger>
-            </Style.Triggers>
-        </Style>
     </dx:ThemedWindow.Resources>
 
-
     <Grid>
+
 
         <dxr:RibbonControl RibbonStyle="Office2019" ShowApplicationButton="False" AllowCustomization="False" 
 			AllowMinimizeRibbon="False" AllowSimplifiedRibbon="False" ToolbarShowMode="Hide" 
 			SelectedPageChanged="RibbonControl_SelectedPageChanged" 
 			Height="64" Background="White" Margin="0,0,1123.667,0">
-            <dxr:RibbonPage Caption="SIGN IN" Background="#16d863" Foreground="White" x:Name="SignInRibbonPage"/>
-            <dxr:RibbonPage Caption="SIGN UP" Background="#16d863" Foreground="White" x:Name="SignUpRibbonPage" />
+            <dxr:RibbonPage Caption="SIGN IN" Background="#16d863" Foreground="White" x:Name="signInRibbonPage"/>
+            <dxr:RibbonPage Caption="SIGN UP" Background="#16d863" Foreground="White" x:Name="signUpRibbonPage"/>
         </dxr:RibbonControl>
 
 
+        <Label Content="Sign In" FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" Margin="87,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="The great reading book experience" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="87,131,0,0" VerticalAlignment="Top" Foreground="Violet"/>
+        <Label Content="2020 Best software" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="87,169,0,0" VerticalAlignment="Top" Foreground="SkyBlue"/>
 
-        <dx:DXTabControl Margin="-15,69,-13.333,0" Name="GuessTabControl" Visibility="Visible">
-            <dx:DXTabItem Name="GuestSignUpTabItem" >
-                <Canvas Background="Lavender" Margin="0,-10,0,-17.667">
-                    <Label Content="Sign Up" FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" Margin="237,70,0,0" VerticalAlignment="Top"/>
-                    <Label Content="The great reading book experience" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="237,130,0,0" VerticalAlignment="Top" Foreground="Violet"/>
-                    <Label Content="2020 Best software" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="237,170,0,0" VerticalAlignment="Top" Foreground="SkyBlue"/>
+        <Grid>
+            <dxe:TextEdit NullText="Input username"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="87,219,0,413"  Width="300" Height="20"/>
+            <dxe:PasswordBoxEdit NullText="Input password" HorizontalAlignment="Left" Margin="87,255,0,0" VerticalAlignment="Top" Width="300" Height="20"/>
 
-                    <dxe:TextEdit NullText="Input fullname"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="237,210,0,108.333"  Width="300" Height="20"/>
-                    <dxe:TextEdit NullText="Input sex"  HorizontalAlignment="Left" VerticalAlignment="Center"  Width="300" Height="20" Canvas.Left="237" Canvas.Top="250"/>
+            <dxe:CheckEdit Content="Remember me" HorizontalAlignment="Left" Margin="87,294,0,0" VerticalAlignment="Top" Width="300" Height="21"/>
+            <dx:SimpleButton Content="SimpleButton" HorizontalAlignment="Left" Height="28" Margin="287,352,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Background="Blue"/>
 
-                    <dxe:TextEdit NullText="Input date of birth"  HorizontalAlignment="Left" VerticalAlignment="Center"  Width="300" Height="20" Canvas.Left="237" Canvas.Top="290"/>
-                    <dxe:TextEdit NullText="Input identify card number"  HorizontalAlignment="Left" VerticalAlignment="Center"  Width="300" Height="20" Canvas.Left="237" Canvas.Top="330"/>
-                    <dxe:TextEdit NullText="Input address"  HorizontalAlignment="Left" VerticalAlignment="Center"  Width="300" Height="20" Canvas.Left="237" Canvas.Top="370"/>
-                    <dxe:TextEdit NullText="Input email"  HorizontalAlignment="Left" VerticalAlignment="Center"  Width="300" Height="20" Canvas.Left="237" Canvas.Top="410"/>
-                    <dxe:TextEdit NullText="Input phone number"  HorizontalAlignment="Left" VerticalAlignment="Center"  Width="300" Height="20" Canvas.Left="237" Canvas.Top="450"/>
+        </Grid>
 
-                    <dxe:TextEdit NullText="Input username"  HorizontalAlignment="Left" VerticalAlignment="Center"  Width="300" Height="20" Canvas.Right="237" Canvas.Top="210"/>
-                    <dxe:PasswordBoxEdit NullText="Input password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="20" Canvas.Right="237" Canvas.Top="250"/>
-                    <dxe:PasswordBoxEdit NullText="Confirm password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="20" Canvas.Right="237" Canvas.Top="290"/>
 
-                    <dx:SimpleButton Name="SignUpButton" Click="SignUpButton_Click" Content="SIGN UP" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="100" Foreground="White" Background="#0c84f3" Grid.Row="1" Canvas.Right="237"  Canvas.Top="330"/>
 
-                </Canvas>
 
-            </dx:DXTabItem>
-
-            <dx:DXTabItem Name="GuestSignInTabItem" Visibility="Visible">
-                <Canvas Background="Lavender" Margin="0,-10,0,-17.333">
-                    <Label Content="Sign In" FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" Margin="237,70,0,0" VerticalAlignment="Top"/>
-                    <Label Content="The great reading book experience" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="237,130,0,0" VerticalAlignment="Top" Foreground="Violet"/>
-                    <Label Content="2020 Best software" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="237,170,0,0" VerticalAlignment="Top" Foreground="SkyBlue"/>
-
-                    <dxe:TextEdit NullText="Input username"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="237,210,0,108.333"  Width="300" Height="20"/>
-                    <dxe:PasswordBoxEdit NullText="Input password" HorizontalAlignment="Left" Margin="237,250,0,0" VerticalAlignment="Top" Width="300" Height="20"/>
-
-                    <dxe:CheckEdit Content="Remember me" HorizontalAlignment="Left" Margin="237,290,0,0" VerticalAlignment="Top" Width="300" Height="21"/>
-                    <dx:SimpleButton Name="SignInButton" Click="SignInButton_Click" Content="SIGN IN" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="100" Foreground="White" Background="#0c84f3" Grid.Row="1" Canvas.Left="437" Canvas.Top="330"/>
-                </Canvas>
-
-            </dx:DXTabItem>
-
-        </dx:DXTabControl>
 
 
     </Grid>
