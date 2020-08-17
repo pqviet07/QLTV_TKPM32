@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Model;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Model;
 namespace ViewModel
 {
     public class QltvContext : DbContext
@@ -24,6 +19,24 @@ namespace ViewModel
         public virtual DbSet<BookReturning> BookReturnings { get; set; }
         public virtual DbSet<BookLendingDetail> BookLendingDetails { get; set; }
         public virtual DbSet<Fine> Fines { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder builder)
+        {
+
+            builder.Entity<BookItem>()
+                .HasIndex(b => b.Barcode)
+                .IsUnique();
+
+            builder.Entity<BookItem>()
+                .Property(b => b.Barcode)
+                .HasMaxLength(32).IsRequired();
+
+            builder.Entity<Account>()
+                .HasIndex(a => a.Username)
+                .IsUnique();
+
+
+        }
 
     }
 }

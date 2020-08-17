@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
 namespace Model
@@ -22,7 +19,8 @@ namespace Model
         public ICollection<BookLendingDetail> BookLendingDetails { get; set; }
         public BookReturning BookReturning { get; set; }
 
-        public int LibrarianId { get; set; }
-        public Librarian Librarian { get; set; }
+        public int AccountId { get; set; }
+        public Account Account { get; set; }
+        
     }
 }

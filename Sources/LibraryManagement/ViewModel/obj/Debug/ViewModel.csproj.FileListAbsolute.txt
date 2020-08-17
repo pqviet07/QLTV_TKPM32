@@ -26,3 +26,15 @@ C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\De
 C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\EntityFramework.xml
 C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.csproj.CopyComplete
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v1.resources
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.csproj.GenerateResource.cache
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v2.resources
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v3.resources
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v31.resources
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v4.resources
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v41.resources
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v5.resources
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v6.resources
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v7.resources
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v71.resources
+C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\ViewModel\obj\Debug\ViewModel.Migrations.v8.resources

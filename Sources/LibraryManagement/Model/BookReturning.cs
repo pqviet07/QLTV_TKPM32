@@ -24,11 +24,11 @@ namespace Model
         [Required]
         public ReturningStatus Status { get; set; }
 
-        public int BookLendingId { get; set; }
         public BookLending BookLending {get; set;}
 
-        public int LibrarianId { get; set; }
-        public Librarian Librarian { get; set; }
+        public int AccountId { get; set; }
+        public Account Account { get; set; }
+
         public string Note { get; set; }
     }
 }

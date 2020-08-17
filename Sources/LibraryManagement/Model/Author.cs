@@ -9,14 +9,15 @@ namespace Model
 {
     public class Author
     {
-        public Author()
-        {
-            Books = new HashSet<Book>();
-        }
+        
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
         
-        public ICollection<Book> Books { get; set; }
+        public ICollection<BookDummy> BookDummys { get; set; }
+        public Author()
+        {
+            BookDummys = new HashSet<BookDummy>();
+        }
     }
 }

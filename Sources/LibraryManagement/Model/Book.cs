@@ -9,21 +9,17 @@ namespace Model
 {
     public abstract class Book
     {
-        public Book()
-        {
-            Authors = new HashSet<Author>();
-        }
-        public int Id { get; set; } 
+        public int Id { get; set; }
         [Required]
-        string ISBN { get; set; }
+        public string ISBN { get; set; }
         [Required]
-        string BookName { get; set; }
+        public string BookName { get; set; }
+        public BookType BookType { get; set; }
+        [Required]
+        public string Publisher { get; set; }
+        [Required]
+        public string Language { get; set; }
+        public int NumsOfPages { get; set; }
         
-        public ICollection<Author> Authors { get; set; }
-        [Required]
-        BookType BookType { get; set; }
-        string Publisher { get; set; }
-        string Language { get; set; }
-        int? NumsOfPages { get; set; }    
     }
 }
