@@ -1,0 +1,110 @@
+﻿<dx:ThemedWindow
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" 
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
+    xmlns:dxsch="http://schemas.devexpress.com/winfx/2008/xaml/scheduling" 
+    x:Class="View.LibrarianWindow"
+    Title="Home" Background="Lavender" ResizeMode="NoResize" Height="680" Width="1280" Top="0" Left="0">
+    <dx:ThemedWindow.Resources>
+        <Style TargetType="{x:Type dxe:TextEdit}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsKeyboardFocusWithin, RelativeSource={RelativeSource Self}}" Value="True">
+                    <Setter Property="Background" Value="Yellow"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="{x:Type dxe:PasswordBoxEdit}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsKeyboardFocusWithin, RelativeSource={RelativeSource Self}}" Value="True">
+                    <Setter Property="Background" Value="Yellow"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </dx:ThemedWindow.Resources>
+
+
+    <Grid>
+
+        <dxr:RibbonControl RibbonStyle="Office2019" ShowApplicationButton="False" AllowCustomization="False" 
+			AllowMinimizeRibbon="False" AllowSimplifiedRibbon="False" ToolbarShowMode="Hide" 
+			SelectedPageChanged="RibbonControl_SelectedPageChanged"
+			Height="64" Background="White" Margin="0,0,465.667,0">
+            <dxr:RibbonPage Caption="HOME" Background="#16d863" Foreground="White" x:Name="LibrarianHomeRibbonPage"/>
+            <dxr:RibbonPage Caption="PROFILE" Background="#16d863" Foreground="White" x:Name="LibrarianProfileRibbonPage" />
+            <dxr:RibbonPage Caption="MEMBER ACCOUNT" Background="#16d863" Foreground="White" x:Name="MemberAccountManagementRibbonPage"/>
+            <dxr:RibbonPage Caption="MEMBER LIBRARY CARD" Background="#16d863" Foreground="White" x:Name="MemberLibraryManagementRibbonPage"/>
+            <dxr:RibbonPage Caption="BOOK LENDING" Background="#16d863" Foreground="White" x:Name="BookLendingManagementRibbonPage"/>
+            <dxr:RibbonPage Caption="BOOK RETURNING" Background="#16d863" Foreground="White" x:Name="BookReturningManagementRibbonPage"/>
+            <dxr:RibbonPage Caption="SIGN OUT" Background="#16d863" Foreground="White" x:Name="LibrarianSignOutRibbonPage" />
+        </dxr:RibbonControl>
+
+
+
+        <dx:DXTabControl Margin="-15,69,-13.333,0" Name="LibrarianTabControl" Visibility="Visible">
+            <dx:DXTabItem Name="LibrarianHomeTabItem" >
+                <Canvas Background="Lavender" Margin="0,-10,0,-17.667">
+                    <Label Content="Home" FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" Margin="237,70,0,0" VerticalAlignment="Top"/>
+                    <Label Content="The great reading book experience" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="237,130,0,0" VerticalAlignment="Top" Foreground="Violet"/>
+                    <Label Content="2020 Best software" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="237,170,0,0" VerticalAlignment="Top" Foreground="SkyBlue"/>
+                </Canvas>
+
+            </dx:DXTabItem>
+
+            <dx:DXTabItem Name="LibrarianProfileTabItem" Visibility="Visible">
+                <Canvas Background="Lavender" Margin="0,-10,0,-17.333">
+                    <Label Content="Profile" FontSize="30" FontWeight="Bold" Margin="637,70,0,0" VerticalAlignment="Top"/>
+
+                    <Label Content="Full name" Margin="127,130,0,0"/>
+                    <dxe:TextEdit Name="FullNameTextEdit" FontWeight="Bold" Canvas.Left="277" Canvas.Top="130" Width="300" Height="20"/>
+
+                    <Label Content="Sex" Canvas.Left="127" Canvas.Top="170" />
+                    <dxe:TextEdit Name="SexTextEdit" IsEnabled="False" FontWeight="Bold" Width="300" Height="20" Canvas.Left="277" Canvas.Top="170"/>
+                    <dx:DropDownButton Name="SelectSexDropDownButton" VerticalAlignment="Center" HorizontalContentAlignment="Center" Canvas.Left="552" Canvas.Top="170" Height="20" Width="25">
+                        <StackPanel>
+                            <Button Content="Male" Click="SelectMale" />
+                            <Button Content="Female" Click="SelectFemale" />
+                        </StackPanel>
+                    </dx:DropDownButton>
+
+                    <Label Content="Date of birth" Canvas.Left="127" Canvas.Top="210" />
+                    <dxe:TextEdit Name="DateOfBirthTextEdit" FontWeight="Bold" Width="300" Height="20" Canvas.Left="277" Canvas.Top="210"/>
+
+                    <Label Content="Identify card number" Canvas.Left="127" Canvas.Top="250" />
+                    <dxe:TextEdit Name="IdentifyCardNumberTextEdit" FontWeight="Bold" Width="300" Height="20" Canvas.Left="277" Canvas.Top="250"/>
+
+                    <Label Content="Address" Canvas.Left="127" Canvas.Top="290" />
+                    <dxe:TextEdit Name="AddressTextEdit" FontWeight="Bold" Width="300" Height="20" Canvas.Left="277" Canvas.Top="290"/>
+
+                    <Label Content="Email" Canvas.Left="127" Canvas.Top="330" />
+                    <dxe:TextEdit Name="EmailTextEdit" FontWeight="Bold" Width="300" Height="20" Canvas.Left="277" Canvas.Top="330"/>
+
+                    <Label Content="Phone number" Canvas.Left="127" Canvas.Top="370" />
+                    <dxe:TextEdit Name="PhoneNumberTextEdit" FontWeight="Bold" Width="300" Height="20" Canvas.Left="277" Canvas.Top="370"/>
+
+                    <Label Content="Position" Canvas.Left="127" Canvas.Top="410" />
+                    <dxe:TextEdit Name="PositionTextEdit" FontWeight="Bold" IsEnabled="False" Width="300" Height="20" Canvas.Left="277" Canvas.Top="410"/>
+
+                    <Label Content="Username" Canvas.Left="737" Canvas.Top="130" />
+                    <dxe:TextEdit Name="UsernameTextEdit" FontWeight="Bold" Width="300" Height="20" Canvas.Right="107" Canvas.Top="130"/>
+
+                    <Label Content="New password" Canvas.Left="737" Canvas.Top="170" />
+                    <dxe:PasswordBoxEdit Name="NewPasswordTextEdit" NullText="Input password" Width="300" Height="20" Canvas.Right="107" Canvas.Top="170"/>
+
+                    <Label Content="Confirm password" Canvas.Left="737" Canvas.Top="210" />
+                    <dxe:PasswordBoxEdit Name="ConfirmPasswordTextEdit" NullText="Confirm password" Width="300" Height="20" Canvas.Right="107" Canvas.Top="210"/>
+
+                    <Label Content="Current password" Canvas.Left="737" Canvas.Top="250" />
+                    <dxe:PasswordBoxEdit Name="CurrentPasswordTextEdit" NullText="Input passsword to confirm this is your account" Width="300" Height="20" Canvas.Right="107" Canvas.Top="250"/>
+
+                    <dx:SimpleButton Name="UpdateProfileButton" Click="UpdateProfileButton_Click" Content="UPDATE" Height="28" Width="100" Foreground="White" Background="#0c84f3" Canvas.Right="107" Canvas.Top="290"/>
+                </Canvas>
+
+            </dx:DXTabItem>
+
+        </dx:DXTabControl>
+
+
+    </Grid>
+</dx:ThemedWindow>

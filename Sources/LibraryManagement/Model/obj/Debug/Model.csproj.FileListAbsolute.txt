@@ -10,3 +10,8 @@ C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\
 C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.pdb
 C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\Model\bin\Debug\Model.dll
 C:\Users\QUOCVIET\Desktop\QLTV_TKPM32\Sources\LibraryManagement\Model\bin\Debug\Model.pdb
+D:\Vinh175\Hoc\Nam3\ThietKePhanMem\FinalProject\QLTV_TKPM32\QLTV_TKPM32\Sources\LibraryManagement\Model\bin\Debug\Model.dll
+D:\Vinh175\Hoc\Nam3\ThietKePhanMem\FinalProject\QLTV_TKPM32\QLTV_TKPM32\Sources\LibraryManagement\Model\bin\Debug\Model.pdb
+D:\Vinh175\Hoc\Nam3\ThietKePhanMem\FinalProject\QLTV_TKPM32\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Vinh175\Hoc\Nam3\ThietKePhanMem\FinalProject\QLTV_TKPM32\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.dll
+D:\Vinh175\Hoc\Nam3\ThietKePhanMem\FinalProject\QLTV_TKPM32\QLTV_TKPM32\Sources\LibraryManagement\Model\obj\Debug\Model.pdb
